@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Link {
+  id        String   @id
+  updatedAt DateTime @updatedAt
+  link      String   @unique
+}
+
+model Metric {
+  id        String   @id @default(cuid())
+  date      DateTime
+  country   String?
+  target    String
+  visitorId String?
+}

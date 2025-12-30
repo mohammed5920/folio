@@ -1,0 +1,26 @@
+export const files = {
+  fontMono:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6JLSD4yjL4O029zc1bSu7aPY8FVgj3XviqxQl",
+  homePic:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6bwN35tt6rJ7knY2zeKSlg6Wwfcq5aHpLZtIU",
+  homeBg:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY63NfsbY39fYMSHqt9GzRbEWj4d3l5TXh0CrFO",
+  paLogo:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6bayKr6rJ7knY2zeKSlg6Wwfcq5aHpLZtIUoO",
+  pmCover:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY654XRRPJbEtaLpUKzmd6o214g3wex5SWilBqC",
+  pmDemo:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6tpBgpyXMmt06K9oSZhDLwXFCBUv8rej2bs7c",
+  pmHero:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6QsJtVVy0XOgxYFk46BWpAUiP5rv7y9hubjdL",
+  pmAcu:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6xZ9v4oh50cRl7uT9bvLX8IEUGgZJ4KfQHhAr",
+  pmMip:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY60bYCrS16jS9ynUWzdcHYR4QGtqgkXiC58lK3",
+  pmLru:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6P9LTJGYLduQZj5b0TFm9kvh2lxeDwIA6Ncsg",
+  pmVid:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6osoSwSEsa3vQAutd0Z9WIhnRfUrPzX4YyJ5L",
+  puiDemo:
+    "https://8j2exiknbi.ufs.sh/f/w6AFBfoIGPY6SKbvw5sTXQhPN6y2V0DfwmkKqpBGFLeInaJU",
+};
