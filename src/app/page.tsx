@@ -72,7 +72,11 @@ function HomeGrid() {
       </MiniDiv>
 
       {/* MBM text */}
-      <div className="relative overflow-hidden group col-span-2 sm:col-span-1 sm:row-span-2 bg-white/10 border border-white/10 hover:bg-white/20 rounded-2xl p-3 flex items-center w-full shadow-white/10 hover:shadow-lg duration-1000 ease-in-out bg-linear-to-r from-transparent to-black/20">
+      <a
+        href="https://github.com/mohammed5920/folio"
+        target="_blank"
+        className="relative overflow-hidden group col-span-2 sm:col-span-1 sm:row-span-2 bg-white/10 border border-white/10 hover:bg-white/20 rounded-2xl p-3 flex items-center w-full shadow-white/10 hover:shadow-lg duration-1000 ease-in-out bg-linear-to-r from-transparent to-black/20"
+      >
         <img
           src={files.homeBg}
           className="absolute right-0 mix-blend-screen invert w-full h-full rounded-2xl inset-0"
@@ -89,7 +93,7 @@ function HomeGrid() {
             mohammed
           </span>
         </h1>
-      </div>
+      </a>
 
       {/* 2 bio cards */}
       <MiniDiv className="text-white/33 col-span-3 sm:col-span-1 grid grid-cols-8 sm:grid-cols-4 place-items-center order-1 sm:order-0">
@@ -105,7 +109,7 @@ function HomeGrid() {
 
       <MiniDiv className="group flex flex-col gap-2 justify-between p-4 transition-colors col-span-2 sm:col-span-1">
         <div className="text-sm text-white/80 leading-tight text-balance text-center">
-          Full stack web engineer with a knack for software rendering.
+          Full stack web engineer with a passion for low-level graphics.
         </div>
 
         <span className="border-t border-white/33" />

@@ -64,6 +64,7 @@ export function ProjectVideoCard({
           ref={videoRef}
           className="absolute w-full h-full object-cover sm:opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           src={video}
+          disablePictureInPicture
           muted
           loop
           playsInline

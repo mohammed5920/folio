@@ -1,4 +1,3 @@
-import z from "zod";
 import { HistorySchema } from "../types/metric";
 import { createMetric } from "../actions/metric";
 
