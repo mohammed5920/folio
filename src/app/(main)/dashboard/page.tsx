@@ -7,15 +7,6 @@ import { UploadButton } from "@/components/mbm/uploadButton";
 import { updateCVLink } from "@/lib/actions/file";
 import { formatRelativeTime, stringToHSL } from "@/lib/utils";
 
-const knownIds = [
-  "4766be01-4228-44b7-a4eb-4c9c22aecd54", //firefox .app
-  "67330832-7ece-4944-8c28-7bde67582375", //firefox .com
-  "f62fb440-8d32-4e47-aff7-2317bf9072fa", //edge .app
-  "d240527e-3355-4eda-ac48-6b86271df3ec", //edge .com
-  "374fdbce-f254-4e59-b4b5-ccccb1a7e044", //phone .app
-  "3fdcd6be-335d-42bf-8199-f4493d83be59", //phone .com
-];
-
 export default async function MBMDashWrapper() {
   return (
     <div className="sm:absolute sm:inset-0 size-full flex items-center justify-center animate-in fade-in transform-gpu duration-500">
@@ -70,16 +61,13 @@ async function MBMDashboard() {
       FROM "Metric"
       WHERE 
         date >= ${sevenDaysAgo} 
-        AND country IS NOT NULL
-        AND NOT ("visitorId" = ANY (${knownIds})) 
       GROUP BY target
       ORDER BY total_views DESC
       LIMIT 5
     `,
     prisma.metric.findMany({
       where: {
-        country: { not: null },
-        visitorId: { not: null, notIn: knownIds },
+        visitorId: { not: null },
       },
       take: 8,
       orderBy: { date: "desc" },

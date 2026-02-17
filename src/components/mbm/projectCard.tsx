@@ -45,9 +45,10 @@ export function ProjectCard({
         <a
           href={"https://github.com/mohammed5920" + href}
           target="_blank"
-          className="flex items-center gap-1 hover:text-white transition-colors"
+          className="flex items-baseline gap-1.5 hover:text-white transition-colors"
         >
-          <SiGithub className="size-3" /> Source
+          <SiGithub className="size-3" />{" "}
+          <span className="-translate-y-0.5">Source</span>
         </a>
       </p>
     </div>

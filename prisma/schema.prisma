@@ -16,7 +16,7 @@ model Link {
 model Metric {
   id        String   @id @default(cuid())
   date      DateTime
-  country   String?
+  country   String
   target    String
   visitorId String?
 }

@@ -76,8 +76,8 @@ export default function PySaic() {
             <strong>11 minutes per frame.</strong>
           </li>
         </ProjectBullets>
-        The solution? We need to stop thinking like a video player, and start
-        thinking like an <i>open world video game.</i>
+        <p>The solution? We need to stop thinking like a video player, and start
+        thinking like an <i>open world video game.</i></p>
         <ProjectSeparator />
         <ProjectHeader>
           Technique 1 - Mip-mapping & levels of detail
@@ -272,7 +272,7 @@ export default function PySaic() {
         <ProjectSeparator />
         <ProjectHeader>Technique 4a - Dynamic Allocation</ProjectHeader>
         <p>
-          We can solve our array allocation problem by using a dense data
+          We can solve our array allocation problem by using a sparse data
           structure instead. The one I settled on is the{" "}
           <ProjectReference href="https://numba.readthedocs.io/en/stable/reference/pysupported.html#typed-dict">
             Numba typed dictionary
@@ -283,7 +283,7 @@ export default function PySaic() {
         <p>
           It's not free, though - a hashmap lookup inside our rendering loop is
           3x slower than an array lookup. There are more advanced ways of doing
-          dense arrays, including the techniques employed on actual GPUs{" "}
+          virtual texturing, including the techniques employed on actual GPUs{" "}
           <ProjectParentheses>
             (since they can't do hashmaps)
           </ProjectParentheses>

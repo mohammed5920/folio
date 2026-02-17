@@ -31,43 +31,31 @@ export default function Home() {
 
 function HomeGrid() {
   return (
-    <div className="grid grid-cols-[auto_1fr_14rem] gap-2">
+    <div className="grid grid-cols-[auto_1fr_auto] sm:grid-cols-[auto_1fr_14rem] gap-2">
       {/* sidebar */}
       <MiniDiv className="row-span-2 flex flex-col gap-2 justify-center">
         <img
           src={files.homePic}
           className="aspect-[0.735] w-30 sm:w-40 rounded-2xl bg-white/10 mx-auto"
         />
-        <MiniDiv className="flex gap-2 sm:gap-1 justify-center items-center flex-wrap sm:flex-nowrap w-min sm:w-full mx-auto">
-          <div className="flex gap-2 sm:gap-1">
-            <a href="https://github.com/mohammed5920" target="_blank">
-              <SiGithub className="opacity-50 hover:opacity-100 transition-opacity" />
-            </a>
-            <a href="mailto:mohammednasrelsayed@gmail.com" target="_blank">
-              <Mail className="rounded-full bg-white text-[#6b6c6f] p-1 opacity-50 hover:opacity-100 transition-opacity" />
-            </a>
-            <a
-              href="https://linkedin.com/in/mohammed-nasr-elsayed"
-              target="_blank"
-            >
-              <div className="rounded-full bg-white text-[#6b6c6f] p-1 opacity-50 hover:opacity-100 transition-opacity">
-                <Linkedin className="size-4" />
-              </div>
-            </a>
-          </div>
-          <div className="flex gap-2 sm:gap-1">
-            <a href="https://x.com/mbmohammedn" target="_blank">
-              <div className="relative">
-                <SiX className="rounded-full bg-white text-[#6b6c6f] p-1 opacity-50" />
-                <div className="absolute inset-0 rounded-full bg-white text-[#6b6c6f] p-1 opacity-0 hover:opacity-100 transition-opacity">
-                  <TwitterIcon className="size-4" />
-                </div>
-              </div>
-            </a>
-            <a href="https://facebook.com/mbmohammedn" target="_blank">
-              <SiFacebook className="opacity-50 hover:opacity-100 transition-opacity" />
-            </a>
-          </div>
+        <MiniDiv className="grid grid-cols-2 sm:grid-cols-4 place-items-center items-center gap-2 sm:w-full mx-auto">
+          <a href="https://github.com/mohammed5920" target="_blank">
+            <SiGithub className="opacity-50 hover:opacity-100 transition-opacity" />
+          </a>
+          <a href="mailto:mohammednasrelsayed@gmail.com" target="_blank">
+            <Mail className="rounded-full bg-white text-[#6b6c6f] p-1 opacity-50 hover:opacity-100 transition-opacity" />
+          </a>
+          <a
+            href="https://linkedin.com/in/mohammed-nasr-elsayed"
+            target="_blank"
+          >
+            <div className="rounded-full bg-white text-[#6b6c6f] p-1 opacity-50 hover:opacity-100 transition-opacity w-fit">
+              <Linkedin className="size-4" />
+            </div>
+          </a>
+          <a href="https://facebook.com/mbmohammedn" target="_blank">
+            <SiFacebook className="opacity-50 hover:opacity-100 transition-opacity" />
+          </a>
         </MiniDiv>
       </MiniDiv>
 
